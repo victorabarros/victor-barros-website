@@ -11,6 +11,7 @@ import {
 } from "../data";
 import { Link } from "../components/link";
 import { HorizontalLine } from "../components/horizontalLine";
+import { Footer } from "../components/footer";
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
@@ -93,14 +94,7 @@ export default function IndexPage() {
         ))}
       </View>
 
-      <View style={styles.footerContainer}>
-        <Text style={styles.footer}>
-          © Victor Barros - Built with
-          <Link href="https://necolas.github.io/react-native-web">
-            {" React Native for Web"}
-          </Link>
-        </Text>
-      </View>
+      <Footer />
     </View>
   );
 }
@@ -149,11 +143,5 @@ const styles = StyleSheet.create({
     margin: 10,
     width: 55,
     height: 55,
-  },
-  footerContainer: { alignSelf: "center", marginTop: 30 },
-  footer: {
-    color: theme.gray,
-    fontSize: 18,
-    fontFamily: "Times New Roman",
   },
 });
