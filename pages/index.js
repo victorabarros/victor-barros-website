@@ -52,37 +52,57 @@ export default function IndexPage() {
       <View style={styles.section}>
         <Text style={styles.title}>Side Projects</Text>
 
-        {SIDE_PROJECTS.map((item) => (
-          <Item key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          data={SIDE_PROJECTS}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Item key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Articles</Text>
-        {ARTICLES.map((item) => (
-          <Item key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          data={ARTICLES}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Item key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Open Source Contributions</Text>
-        {OPEN_SOURCE_CONTRIBUTIONS.map((item) => (
-          <Item key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          data={OPEN_SOURCE_CONTRIBUTIONS}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Item key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Certifications</Text>
-        {CERTIFICATIONS.map((item) => (
-          <Item key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          data={CERTIFICATIONS}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Item key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Professional Membership</Text>
-        {PROFESSIONAL_ASSOCIATIONS.map((item) => (
-          <Item key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          data={PROFESSIONAL_ASSOCIATIONS}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Item key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <HorizontalLine />
