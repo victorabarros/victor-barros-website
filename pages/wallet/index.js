@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(24, 26, 27)",
     paddingHorizontal: 30,
     paddingVertical: 50,
-    height: "100vh",
+    minHeight: "100vh",
   },
   section: {
     marginVertical: 15,
