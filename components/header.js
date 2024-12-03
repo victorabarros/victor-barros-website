@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import { HorizontalLine } from "./horizontalLine";
-import { theme, icons } from "../styles";
+import { theme } from "../public/styles";
 
 export const Header = () => (
   <>

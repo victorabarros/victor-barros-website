@@ -5,10 +5,9 @@ import {
   View,
   Image,
   Clipboard,
-  TextInput,
   Pressable,
 } from "react-native";
-import { theme, icons } from "../../styles";
+import { theme } from "../../public/styles";
 import { HorizontalLine } from "../../components/horizontalLine";
 import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
@@ -42,7 +41,6 @@ export default function WalletPage() {
           }}
         >
           <Image
-            aria-label="React logo"
             resizeMode="contain"
             source={{
               uri: "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",

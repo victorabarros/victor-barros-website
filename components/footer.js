@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { theme, icons } from "../styles";
+import { theme } from "../public/styles";
 import { Link } from "./link";
 
 export const Footer = () => (
@@ -13,6 +13,7 @@ export const Footer = () => (
     </Text>
   </View>
 );
+
 const styles = StyleSheet.create({
   root: {
     alignSelf: "center",

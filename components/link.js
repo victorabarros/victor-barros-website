@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { Text } from "react-native";
 
 export const Link = (props) => {
   return (

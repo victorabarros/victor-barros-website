@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Image } from "react-native";
-import { theme, icons } from "../styles";
+import { StyleSheet, Text, View } from "react-native";
+import { theme } from "../public/styles";
 
 export const HorizontalLine = () => {
   const styles = StyleSheet.create({
