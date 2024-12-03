@@ -10,8 +10,7 @@ import {
   PROFESSIONAL_ASSOCIATIONS,
   SOCIAL_MEDIAS,
 } from "../data";
-
-function Link(props) {
+const Link = (props) => {
   return (
     <NextLink href={props.href}>
       <Text
@@ -33,8 +32,7 @@ const Item = ({ id, label, url }) => (
     <Text style={styles.itemText}>{label}</Text>
   </Link>
 );
-
-function HorizontalLine() {
+const HorizontalLine = () => {
   const styles = StyleSheet.create({
     container: {
       overflow: "hidden",
