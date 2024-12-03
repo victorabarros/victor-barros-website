@@ -5,7 +5,7 @@
     "build": "next build",
     "dev": "next",
     "start": "next start",
-    "linter": "prettier . --write"
+    "lint": "prettier . --write"
   },
   "dependencies": {
     "babel-plugin-react-native-web": "0.19.13",
