@@ -14,7 +14,16 @@ import {
 function Link(props) {
   return (
     <NextLink href={props.href}>
-      <Text {...props} role="link" style={[styles.link, props.style]} />
+      <Text
+        {...props}
+        role="link"
+        style={[
+          {
+            color: "#1977f2",
+          },
+          props.style,
+        ]}
+      />
     </NextLink>
   );
 }
@@ -169,6 +178,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "flex-start",
     width: "65%",
+    maxWidth: 700,
     justifyContent: "space-between",
   },
   socialMediasImage: {
@@ -179,7 +189,7 @@ const styles = StyleSheet.create({
   footerContainer: { alignSelf: "center", marginTop: 30 },
   footer: {
     color: theme.gray,
-    fontSize: 16,
+    fontSize: 18,
     fontFamily: "Times New Roman",
   },
 });
