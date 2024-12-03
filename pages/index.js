@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import NextLink from "next/link";
 import { theme, icons } from "../styles";
 import {
   SIDE_PROJECTS,
@@ -10,47 +9,14 @@ import {
   PROFESSIONAL_ASSOCIATIONS,
   SOCIAL_MEDIAS,
 } from "../data";
-const Link = (props) => {
-  return (
-    <NextLink href={props.href}>
-      <Text
-        {...props}
-        role="link"
-        style={[
-          {
-            color: "#1977f2",
-          },
-          props.style,
-        ]}
-      />
-    </NextLink>
-  );
-}
+import { Link } from "../components/link";
+import { HorizontalLine } from "../components/horizontalLine";
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
     <Text style={styles.itemText}>{label}</Text>
   </Link>
 );
-const HorizontalLine = () => {
-  const styles = StyleSheet.create({
-    container: {
-      overflow: "hidden",
-      flexDirection: "row",
-      marginVertical: 10,
-    },
-    line: {
-      opacity: 0.4,
-      color: theme.gray,
-    },
-  });
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.line}>{"===".repeat(100)}</Text>
-    </View>
-  );
-}
 
 const SocialMedias = ({ id, url, icon }) => (
   <Link href={url}>
@@ -62,7 +28,7 @@ export default function IndexPage() {
   return (
     <View style={styles.root}>
       <Text style={styles.headLine}>Victor Barros</Text>
-      <Text style={styles.title}>Software Cypherpunl Freedom</Text>
+      <Text style={styles.title}>Software Cypherpunk Freedom</Text>
       <HorizontalLine />
 
       <View style={styles.section}>
