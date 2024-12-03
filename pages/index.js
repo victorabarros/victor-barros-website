@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { theme, icons } from "../styles";
+import { theme, icons } from "../public/styles";
 import {
   SIDE_PROJECTS,
   ARTICLES,
@@ -8,11 +8,12 @@ import {
   CERTIFICATIONS,
   PROFESSIONAL_ASSOCIATIONS,
   SOCIAL_MEDIAS,
-} from "../data";
+} from "../public/data";
 import { Link } from "../components/link";
 import { HorizontalLine } from "../components/horizontalLine";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import { FlatList } from "react-native-web";
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
@@ -87,9 +88,16 @@ export default function IndexPage() {
       <HorizontalLine />
 
       <View style={styles.socialMediasContainer}>
-        {SOCIAL_MEDIAS.map((item) => (
-          <SocialMedias key={item.id - item.label} {...item} />
-        ))}
+        <FlatList
+          style={styles.socialMedias}
+          contentContainerStyle={styles.socialMediasContents}
+          keyExtractor={(item) => item.id}
+          data={SOCIAL_MEDIAS}
+          horizontal={true}
+          renderItem={({ item }) => (
+            <SocialMedias key={item.id - item.label} {...item} />
+          )}
+        />
       </View>
 
       <Footer />
@@ -103,6 +111,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(24, 26, 27)",
     paddingHorizontal: 30,
     paddingVertical: 50,
+    width: "100%",
   },
   section: {
     marginVertical: 15,
@@ -128,6 +137,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "flex-start",
     width: "65%",
+    minWidth: 250,
     maxWidth: 700,
     justifyContent: "space-between",
   },
@@ -135,5 +145,11 @@ const styles = StyleSheet.create({
     margin: 10,
     width: 55,
     height: 55,
+  },
+  socialMedias: {
+    flexDirection: "column",
+  },
+  socialMediasContents: {
+    flexWrap: "wrap",
   },
 });
