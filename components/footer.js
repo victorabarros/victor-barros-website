@@ -4,7 +4,7 @@ import { theme, icons } from "../styles";
 import { Link } from "./link";
 
 export const Footer = () => (
-  <View style={styles.rood}>
+  <View style={styles.root}>
     <Text style={styles.text}>
       © Victor Barros - Built with
       <Link href="https://necolas.github.io/react-native-web">
@@ -14,7 +14,11 @@ export const Footer = () => (
   </View>
 );
 const styles = StyleSheet.create({
-  rood: { alignSelf: "center", marginTop: 30 },
+  root: {
+    alignSelf: "center",
+    marginTop: 30,
+    backgroundColor: "rgb(24, 26, 27)",
+  },
   text: {
     color: theme.gray,
     fontSize: 18,
