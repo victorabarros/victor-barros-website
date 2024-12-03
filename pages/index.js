@@ -12,6 +12,7 @@ import {
 import { Link } from "../components/link";
 import { HorizontalLine } from "../components/horizontalLine";
 import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
@@ -28,10 +29,7 @@ const SocialMedias = ({ id, url, icon }) => (
 export default function IndexPage() {
   return (
     <View style={styles.root}>
-      <Text style={styles.headLine}>Victor Barros</Text>
-      <Text style={styles.title}>Software Cypherpunk Freedom</Text>
-      <HorizontalLine />
-
+      <Header />
       <View style={styles.section}>
         <Text style={styles.title}>Bio</Text>
         <Text
@@ -105,12 +103,6 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(24, 26, 27)",
     paddingHorizontal: 30,
     paddingVertical: 50,
-  },
-  headLine: {
-    color: theme.orange,
-    fontSize: 50,
-    fontFamily: "Times New Roman",
-    fontWeight: "bold",
   },
   section: {
     marginVertical: 15,

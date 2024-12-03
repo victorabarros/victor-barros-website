@@ -11,6 +11,7 @@ import {
 import { theme, icons } from "../../styles";
 import { HorizontalLine } from "../../components/horizontalLine";
 import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
 
 const LIGHTNING_WALLET_ADDRESS =
   "lnbc1pn56z0gpp5gwtwu4d3uwqptlnh72zpxafyrem05qksaukmpjspazm3r6nwt2jqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhd24scjm9era3nvqqqqryqqqqthqqpysp5prkcr2jhefn49q3u3q7hjuyumpf4uagxen2jumex9frjmmm0nwzs9qrsgqswk7kpnzx3jy4m6msfrzglxrlpz40at7manzm5ew6nfj50ezg6x4d2ugp3h0hcly5sj0efj5rudy3v7805qyrappqmwa5qgru7x7t3gqg4jryp";
@@ -30,9 +31,7 @@ function Button(props) {
 export default function WalletPage() {
   return (
     <View style={styles.root}>
-      <Text style={styles.headLine}>Victor Barros</Text>
-      <Text style={styles.title}>Software Cypherpunk Freedom</Text>
-      <HorizontalLine />
+      <Header />
 
       <View style={styles.section}>
         <Text style={styles.title}>Buy me a coffee</Text>
@@ -91,12 +90,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 50,
     height: "100vh",
-  },
-  headLine: {
-    color: theme.orange,
-    fontSize: 50,
-    fontFamily: "Times New Roman",
-    fontWeight: "bold",
   },
   section: {
     marginVertical: 15,
