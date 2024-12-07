@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { theme } from "../public/styles";
-import { Link } from "./link";
+import React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import { theme } from "../public/styles"
+import { Link } from "./link"
 
 export const Footer = () => (
   <View style={styles.root}>
@@ -12,7 +12,7 @@ export const Footer = () => (
       </Link>
     </Text>
   </View>
-);
+)
 
 const styles = StyleSheet.create({
   root: {
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: "Times New Roman",
   },
-});
+})

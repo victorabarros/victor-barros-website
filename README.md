@@ -13,6 +13,6 @@ make debug
 <!--
 TODO
 
--
+- Universal & Accessible UI Components for React Native & Web https://v1.gluestack.io/ui/v1
 
 -->

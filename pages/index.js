@@ -1,6 +1,6 @@
-import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
-import { theme, icons } from "../public/styles";
+import React from "react"
+import { StyleSheet, Text, View, Image } from "react-native"
+import { theme, icons } from "../public/styles"
 import {
   SIDE_PROJECTS,
   ARTICLES,
@@ -8,24 +8,24 @@ import {
   CERTIFICATIONS,
   PROFESSIONAL_ASSOCIATIONS,
   SOCIAL_MEDIAS,
-} from "../public/data";
-import { Link } from "../components/link";
-import { HorizontalLine } from "../components/horizontalLine";
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
-import { FlatList } from "react-native-web";
+} from "../public/data"
+import { Link } from "../components/link"
+import { HorizontalLine } from "../components/horizontalLine"
+import { Footer } from "../components/footer"
+import { Header } from "../components/header"
+import { FlatList } from "react-native-web"
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
     <Text style={styles.itemText}>{label}</Text>
   </Link>
-);
+)
 
 const SocialMedias = ({ id, url, icon }) => (
   <Link href={url}>
     <Image style={styles.socialMediasImage} source={icons[icon].svg} />
   </Link>
-);
+)
 
 export default function IndexPage() {
   return (
@@ -122,7 +122,7 @@ export default function IndexPage() {
 
       <Footer />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -172,4 +172,4 @@ const styles = StyleSheet.create({
   socialMediasContents: {
     flexWrap: "wrap",
   },
-});
+})

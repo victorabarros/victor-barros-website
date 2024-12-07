@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   StyleSheet,
   Text,
@@ -6,25 +6,25 @@ import {
   Image,
   Clipboard,
   Pressable,
-} from "react-native";
-import { theme } from "../../public/styles";
-import { HorizontalLine } from "../../components/horizontalLine";
-import { Footer } from "../../components/footer";
-import { Header } from "../../components/header";
+} from "react-native"
+import { theme } from "../../public/styles"
+import { HorizontalLine } from "../../components/horizontalLine"
+import { Footer } from "../../components/footer"
+import { Header } from "../../components/header"
 
 const LIGHTNING_WALLET_ADDRESS =
-  "lnbc1pn56z0gpp5gwtwu4d3uwqptlnh72zpxafyrem05qksaukmpjspazm3r6nwt2jqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhd24scjm9era3nvqqqqryqqqqthqqpysp5prkcr2jhefn49q3u3q7hjuyumpf4uagxen2jumex9frjmmm0nwzs9qrsgqswk7kpnzx3jy4m6msfrzglxrlpz40at7manzm5ew6nfj50ezg6x4d2ugp3h0hcly5sj0efj5rudy3v7805qyrappqmwa5qgru7x7t3gqg4jryp";
+  "lnbc1pn56z0gpp5gwtwu4d3uwqptlnh72zpxafyrem05qksaukmpjspazm3r6nwt2jqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhd24scjm9era3nvqqqqryqqqqthqqpysp5prkcr2jhefn49q3u3q7hjuyumpf4uagxen2jumex9frjmmm0nwzs9qrsgqswk7kpnzx3jy4m6msfrzglxrlpz40at7manzm5ew6nfj50ezg6x4d2ugp3h0hcly5sj0efj5rudy3v7805qyrappqmwa5qgru7x7t3gqg4jryp"
 
 const WALLET_QR_CODE =
-  "https://raw.githubusercontent.com/victorabarros/victorabarros/master/assets/lightning_wallet.png";
+  "https://raw.githubusercontent.com/victorabarros/victorabarros/master/assets/lightning_wallet.png"
 
 function Button(props) {
-  const { title, ...other } = props;
+  const { title, ...other } = props
   return (
     <Pressable {...other} style={styles.button}>
       <Text style={styles.buttonText}>{title}</Text>
     </Pressable>
-  );
+  )
 }
 
 export default function WalletPage() {
@@ -37,7 +37,7 @@ export default function WalletPage() {
 
         <Pressable
           onPress={() => {
-            window.open("https://www.buymeacoffee.com/victorbarros", "_blank");
+            window.open("https://www.buymeacoffee.com/victorbarros", "_blank")
           }}
         >
           <Image
@@ -67,7 +67,7 @@ export default function WalletPage() {
         <View style={styles.buttonBox}>
           <Button
             onPress={() => {
-              Clipboard.setString(LIGHTNING_WALLET_ADDRESS);
+              Clipboard.setString(LIGHTNING_WALLET_ADDRESS)
             }}
             title="Copy address"
           />
@@ -78,7 +78,7 @@ export default function WalletPage() {
 
       <Footer />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -111,4 +111,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 15,
   },
-});
+})

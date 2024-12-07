@@ -1,7 +1,7 @@
 export const SIDE_PROJECTS = [
   { label: "UraBot", url: "https://x.com/uraniumStockBot/" },
   { label: "BRLBot", url: "https://x.com/BrlBot/" },
-];
+]
 
 export const ARTICLES = [
   {
@@ -16,7 +16,7 @@ export const ARTICLES = [
     label: "Installing Docker with one single command (Debian and Ubuntu)",
     url: "https://victoralmeidabarros.medium.com/install-docker-with-one-single-command-debian-and-ubuntu-ce021df0f976",
   },
-];
+]
 
 export const OPEN_SOURCE_CONTRIBUTIONS = [
   {
@@ -40,7 +40,7 @@ export const OPEN_SOURCE_CONTRIBUTIONS = [
     label: "PacktPublishing/Learn-Go-in-3-Hours",
     url: "https://github.com/PacktPublishing/Learn-Go-in-3-Hours/pull/3",
   },
-];
+]
 
 export const CERTIFICATIONS = [
   {
@@ -51,14 +51,14 @@ export const CERTIFICATIONS = [
     url: "https://certs.duolingo.com/708c9de8137952ac95900efb90a31002",
     label: "English, Duolingo",
   },
-];
+]
 
 export const PROFESSIONAL_ASSOCIATIONS = [
   {
     url: "http://member.acm.org/~victorbarros",
     label: "Association for Computing Machinery",
   },
-];
+]
 
 export const SOCIAL_MEDIAS = [
   {
@@ -81,4 +81,4 @@ export const SOCIAL_MEDIAS = [
     icon: "hashnode",
     url: "https://victorbarros.hashnode.dev/",
   },
-];
+]

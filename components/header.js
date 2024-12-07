@@ -1,7 +1,7 @@
-import React from "react";
-import { StyleSheet, Text } from "react-native";
-import { HorizontalLine } from "./horizontalLine";
-import { theme } from "../public/styles";
+import React from "react"
+import { StyleSheet, Text } from "react-native"
+import { HorizontalLine } from "./horizontalLine"
+import { theme } from "../public/styles"
 
 export const Header = () => (
   <>
@@ -9,7 +9,7 @@ export const Header = () => (
     <Text style={styles.title}>Software Cypherpunk Freedom</Text>
     <HorizontalLine />
   </>
-);
+)
 
 const styles = StyleSheet.create({
   headLine: {
@@ -25,4 +25,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
   },
-});
+})

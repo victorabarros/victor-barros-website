@@ -1,6 +1,6 @@
-import React from "react";
-import { StyleSheet, View, Image } from "react-native";
-import { Footer } from "../../components/footer";
+import React from "react"
+import { StyleSheet, View, Image } from "react-native"
+import { Footer } from "../../components/footer"
 
 export default function SextouPage() {
   return (
@@ -17,7 +17,7 @@ export default function SextouPage() {
 
       <Footer />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     minHeight: "100vh",
   },
-});
+})

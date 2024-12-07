@@ -1,5 +1,5 @@
-import NextLink from "next/link";
-import { Text } from "react-native";
+import NextLink from "next/link"
+import { Text } from "react-native"
 
 export const Link = (props) => {
   return (
@@ -15,5 +15,5 @@ export const Link = (props) => {
         ]}
       />
     </NextLink>
-  );
-};
+  )
+}
