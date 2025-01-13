@@ -94,7 +94,7 @@ export default function IndexPage() {
         />
       </View>
 
-      <View style={styles.section}>
+      {/* <View style={styles.section}>
         <Text style={styles.title}>Professional Membership</Text>
         <FlatList
           data={PROFESSIONAL_ASSOCIATIONS}
@@ -103,7 +103,7 @@ export default function IndexPage() {
             <Item key={item.id - item.label} {...item} />
           )}
         />
-      </View>
+      </View> */}
 
       <HorizontalLine />
 
