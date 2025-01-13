@@ -31,7 +31,7 @@ export default function IndexPage() {
   return (
     <View style={styles.root}>
       <Header />
-      <View style={styles.section}>
+      {/* <View style={styles.section}>
         <Text style={styles.title}>Bio</Text>
         <Text
           style={[
@@ -47,7 +47,7 @@ export default function IndexPage() {
             <Text style={{ color: theme.orange }}> Superhuman</Text>
           </Link>
         </Text>
-      </View>
+      </View> */}
 
       <View style={styles.section}>
         <Text style={styles.title}>Side Projects</Text>
