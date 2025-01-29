@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
-import { StyleSheet, View, Image } from "react-native"
+import { StyleSheet, View } from "react-native"
+import Image from "next/image"
 import { HorizontalLine } from "../../components/horizontalLine"
 import { Footer } from "../../components/footer"
 import { Header } from "../../components/header"
@@ -40,15 +41,18 @@ export default function TermGIFPage() {
       <Header />
 
       <View style={styles.section}>
-        <Image
-          resizeMode="contain"
-          source={{
-            uri: TERM_GIF_EXAMPLE,
-          }}
+        <View
           style={{
-            height: 300,
+            alignSelf: "center",
           }}
-        />
+        >
+          <Image
+            alt="termGIFforge example"
+            src={TERM_GIF_EXAMPLE}
+            width={600}
+            height={300}
+          />
+        </View>
       </View>
 
       <View style={styles.section}>
