@@ -2,10 +2,13 @@ import React from "react"
 import { StyleSheet, Text } from "react-native"
 import { HorizontalLine } from "./horizontalLine"
 import { theme } from "../public/styles"
+import { Link } from "../components/link"
 
 export const Header = () => (
   <>
-    <Text style={styles.headLine}>Victor Barros</Text>
+    <Link href={"/"}>
+      <Text style={styles.headLine}>Victor Barros</Text>
+    </Link>
     <Text style={styles.title}>Software Cypherpunk Freedom</Text>
     <HorizontalLine />
   </>

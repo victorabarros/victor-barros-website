@@ -13,17 +13,12 @@ import { Link } from "../components/link"
 import { HorizontalLine } from "../components/horizontalLine"
 import { Footer } from "../components/footer"
 import { Header } from "../components/header"
+import { SocialMedia } from "../components/socialMedia"
 import { FlatList } from "react-native-web"
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
     <Text style={styles.itemText}>{label}</Text>
-  </Link>
-)
-
-const SocialMedias = ({ id, url, icon }) => (
-  <Link href={url}>
-    <Image style={styles.socialMediasImage} source={icons[icon].svg} />
   </Link>
 )
 
@@ -115,7 +110,7 @@ export default function IndexPage() {
           data={SOCIAL_MEDIAS}
           horizontal={true}
           renderItem={({ item }) => (
-            <SocialMedias key={item.id - item.label} {...item} />
+            <SocialMedia key={item.id - item.label} {...item} />
           )}
         />
       </View>

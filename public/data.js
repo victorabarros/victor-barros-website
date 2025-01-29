@@ -1,7 +1,7 @@
 export const SIDE_PROJECTS = [
   { label: "UraBot", url: "https://x.com/uraniumStockBot/" },
   { label: "BRLBot", url: "https://x.com/BrlBot/" },
-  { label: "TermGIFforge", url: "http://terminalgifapi.com/" },
+  { label: "TermGIFforge", url: "/termgif" },
 ]
 
 export const ARTICLES = [
