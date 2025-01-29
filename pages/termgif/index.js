@@ -1,9 +1,5 @@
 import React, { useEffect } from "react"
-import {
-  StyleSheet,
-  View,
-  Image,
-} from "react-native"
+import { StyleSheet, View, Image } from "react-native"
 import { HorizontalLine } from "../../components/horizontalLine"
 import { Footer } from "../../components/footer"
 import { Header } from "../../components/header"
