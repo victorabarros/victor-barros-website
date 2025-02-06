@@ -9,7 +9,7 @@ export const Header = () => (
     <Link href={"/"}>
       <Text style={styles.headLine}>Victor Barros</Text>
     </Link>
-    <Text style={styles.title}>Software Cypherpunk Freedom</Text>
+    <Text style={styles.title}>Software ⸱ Digital Product ⸱ Innovation</Text>
     <HorizontalLine />
   </>
 )
