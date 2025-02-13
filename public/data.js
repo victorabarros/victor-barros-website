@@ -20,27 +20,15 @@ export const ARTICLES = [
 ]
 
 export const OPEN_SOURCE_CONTRIBUTIONS = [
-  {
-    label: "aljazceru/awesome-nostr",
-    url: "https://github.com/aljazceru/awesome-nostr/pull/431",
-  },
-  {
-    label: "w3b3d3v/w3d-podcast",
-    url: "https://github.com/w3b3d3v/w3d-podcast/pull/1",
-  },
-  {
-    label: "dgrijalva/jwt-go",
-    url: "https://github.com/dgrijalva/jwt-go/issues/450",
-  },
-  { label: "nsqio/nsq", url: "https://github.com/nsqio/nsq/pull/1243" },
-  {
-    label: "nsqio/nsqio.github.io",
-    url: "https://github.com/nsqio/nsqio.github.io/pull/60",
-  },
-  {
-    label: "PacktPublishing/Learn-Go-in-3-Hours",
-    url: "https://github.com/PacktPublishing/Learn-Go-in-3-Hours/pull/3",
-  },
+  { label:"HubSpot/oauth-quickstart-nodejs", url:"https://github.com/HubSpot/oauth-quickstart-nodejs/pull/34", },
+  { label:"adilmoujahid/blockchain-python-tutorial", url:"https://github.com/adilmoujahid/blockchain-python-tutorial/pull/15", },
+  { label: "w3b3d3v/w3d-podcast", url: "https://github.com/w3b3d3v/w3d-podcast/pull/1", },
+  { label: "PacktPublishing/Learn-Go-in-3-Hours", url: "https://github.com/PacktPublishing/Learn-Go-in-3-Hours/pull/3", },
+  // {label:"BlockchainCommons/Learning-Bitcoin-from-the-Command-Line", url:"https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/pull/624", },
+  // { label: "aljazceru/awesome-nostr", url: "https://github.com/aljazceru/awesome-nostr/pull/431", },
+  // { label: "dgrijalva/jwt-go", url: "https://github.com/dgrijalva/jwt-go/issues/450", },
+  // { label: "nsqio/nsq", url: "https://github.com/nsqio/nsq/pull/1243" },
+  // { label: "nsqio/nsqio.github.io", url: "https://github.com/nsqio/nsqio.github.io/pull/60", },
 ]
 
 export const CERTIFICATIONS = [
