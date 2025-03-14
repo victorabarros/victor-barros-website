@@ -1,20 +1,19 @@
 import React from "react"
-import { StyleSheet, Text, View, Image } from "react-native"
-import { theme, icons } from "../public/styles"
-import {
-  SIDE_PROJECTS,
-  ARTICLES,
-  OPEN_SOURCE_CONTRIBUTIONS,
-  CERTIFICATIONS,
-  PROFESSIONAL_ASSOCIATIONS,
-  SOCIAL_MEDIAS,
-} from "../public/data"
-import { Link } from "../components/link"
-import { HorizontalLine } from "../components/horizontalLine"
+import { StyleSheet, Text, View } from "react-native"
+import { FlatList } from "react-native-web"
 import { Footer } from "../components/footer"
 import { Header } from "../components/header"
+import { HorizontalLine } from "../components/horizontalLine"
+import { Link } from "../components/link"
 import { SocialMedia } from "../components/socialMedia"
-import { FlatList } from "react-native-web"
+import {
+  ARTICLES,
+  CERTIFICATIONS,
+  OPEN_SOURCE_CONTRIBUTIONS,
+  SIDE_PROJECTS,
+  SOCIAL_MEDIAS
+} from "../public/data"
+import { theme } from "../public/styles"
 
 const Item = ({ id, label, url }) => (
   <Link href={url} style={styles.itemTextContainer}>
@@ -127,6 +126,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 50,
     width: "100%",
+    minHeight: "100vh",
+    justifyContent: "space-between",
   },
   section: {
     marginVertical: 15,
