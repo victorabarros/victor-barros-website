@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "babel-plugin-react-native-web": "0.19.13",
+    "mongodb": "^6.14.2",
     "next": "^12.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

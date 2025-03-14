@@ -17,8 +17,9 @@ docker-command: kill-containers
 		-v $(shell pwd):${APP_DIR} -w ${APP_DIR} \
 		--env PORT=${PORT} \
 		--env API_KEY=${API_KEY} \
-			-p ${PORT}:${PORT} --name ${APP_NAME} \
-			${BASE_DOCKER_IMAGE} sh -c "${COMMAND}"
+		--env-file .env \
+		-p ${PORT}:${PORT} --name ${APP_NAME} \
+		${BASE_DOCKER_IMAGE} sh -c "${COMMAND}"
 
 debug:
 	@clear
