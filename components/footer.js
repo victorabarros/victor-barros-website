@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
   root: {
     alignSelf: "center",
     marginTop: 30,
-    backgroundColor: "rgb(24, 26, 27)",
   },
   text: {
     color: theme.gray,

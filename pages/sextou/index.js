@@ -1,10 +1,11 @@
 import React from "react"
-import { StyleSheet, View, Image } from "react-native"
+import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
-
+import { NoiseBackground } from "../../components/noiseBackground"
 export default function SextouPage() {
   return (
     <View style={styles.root}>
+      <NoiseBackground />
       <Image
         resizeMode="contain"
         source={{

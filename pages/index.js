@@ -5,6 +5,7 @@ import { Footer } from "../components/footer"
 import { Header } from "../components/header"
 import { HorizontalLine } from "../components/horizontalLine"
 import { Link } from "../components/link"
+import { NoiseBackground } from "../components/noiseBackground"
 import { SocialMedia } from "../components/socialMedia"
 import {
   ARTICLES,
@@ -24,6 +25,7 @@ const Item = ({ id, label, url }) => (
 export default function IndexPage() {
   return (
     <View style={styles.root}>
+      <NoiseBackground />
       <Header />
       {/* <View style={styles.section}>
         <Text style={styles.title}>Bio</Text>

@@ -1,9 +1,10 @@
-import React, { useEffect } from "react"
-import { StyleSheet, View } from "react-native"
 import Image from "next/image"
-import { HorizontalLine } from "../../components/horizontalLine"
+import React from "react"
+import { StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { Header } from "../../components/header"
+import { HorizontalLine } from "../../components/horizontalLine"
+import { NoiseBackground } from "../../components/noiseBackground"
 import { SocialMedia } from "../../components/socialMedia"
 
 /*
@@ -38,6 +39,7 @@ const TERM_GIF_EXAMPLE = `http://terminalgifapi.com/api/v1/gif?commands=%5B%20%2
 export default function TermGIFPage() {
   return (
     <View style={styles.root}>
+      <NoiseBackground />
       <Header />
 
       <View style={styles.section}>
