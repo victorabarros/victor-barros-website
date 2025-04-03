@@ -1,16 +1,17 @@
 import React from "react"
 import {
-  Clipboard,
-  Image,
-  Pressable,
-  StyleSheet,
-  Text,
-  View,
+    Clipboard,
+    Image,
+    Pressable,
+    StyleSheet,
+    Text,
+    View,
 } from "react-native"
 import { Footer } from "../../components/footer"
 import { Header } from "../../components/header"
 import { HorizontalLine } from "../../components/horizontalLine"
 import { NoiseBackground } from "../../components/noiseBackground"
+import { TrackingPixel } from "../../components/trackingPixel"
 import { theme } from "../../public/styles"
 const LIGHTNING_WALLET_ADDRESS =
   "lnbc1pn56z0gpp5gwtwu4d3uwqptlnh72zpxafyrem05qksaukmpjspazm3r6nwt2jqdqqcqzzgxqyz5vqrzjqwnvuc0u4txn35cafc7w94gxvq5p3cu9dd95f7hlrh0fvs46wpvhd24scjm9era3nvqqqqryqqqqthqqpysp5prkcr2jhefn49q3u3q7hjuyumpf4uagxen2jumex9frjmmm0nwzs9qrsgqswk7kpnzx3jy4m6msfrzglxrlpz40at7manzm5ew6nfj50ezg6x4d2ugp3h0hcly5sj0efj5rudy3v7805qyrappqmwa5qgru7x7t3gqg4jryp"
@@ -30,6 +31,7 @@ function Button(props) {
 export default function WalletPage() {
   return (
     <View style={styles.root}>
+      <TrackingPixel />
       <NoiseBackground />
       <Header />
 

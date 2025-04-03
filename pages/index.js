@@ -7,6 +7,7 @@ import { HorizontalLine } from "../components/horizontalLine"
 import { Link } from "../components/link"
 import { NoiseBackground } from "../components/noiseBackground"
 import { SocialMedia } from "../components/socialMedia"
+import { TrackingPixel } from "../components/trackingPixel"
 import {
   ARTICLES,
   CERTIFICATIONS,
@@ -25,6 +26,7 @@ const Item = ({ id, label, url }) => (
 export default function IndexPage() {
   return (
     <View style={styles.root}>
+      <TrackingPixel />
       <NoiseBackground />
       <Header />
       {/* <View style={styles.section}>
@@ -50,10 +52,8 @@ export default function IndexPage() {
 
         <FlatList
           data={SIDE_PROJECTS}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Item key={item.id - item.label} {...item} />
-          )}
+          keyExtractor={(item) => item.label}
+          renderItem={({ item }) => <Item {...item} />}
         />
       </View>
 
@@ -61,10 +61,8 @@ export default function IndexPage() {
         <Text style={styles.title}>Articles</Text>
         <FlatList
           data={ARTICLES}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Item key={item.id - item.label} {...item} />
-          )}
+          keyExtractor={(item) => item.label}
+          renderItem={({ item }) => <Item {...item} />}
         />
       </View>
 
@@ -72,10 +70,8 @@ export default function IndexPage() {
         <Text style={styles.title}>Open Source Contributions</Text>
         <FlatList
           data={OPEN_SOURCE_CONTRIBUTIONS}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Item key={item.id - item.label} {...item} />
-          )}
+          keyExtractor={(item) => item.label}
+          renderItem={({ item }) => <Item {...item} />}
         />
       </View>
 
@@ -83,10 +79,8 @@ export default function IndexPage() {
         <Text style={styles.title}>Certifications</Text>
         <FlatList
           data={CERTIFICATIONS}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Item key={item.id - item.label} {...item} />
-          )}
+          keyExtractor={(item) => item.label}
+          renderItem={({ item }) => <Item {...item} />}
         />
       </View>
 
@@ -107,12 +101,10 @@ export default function IndexPage() {
         <FlatList
           style={styles.socialMedias}
           contentContainerStyle={styles.socialMediasContents}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.icon}
+          numColumns={3}
           data={SOCIAL_MEDIAS}
-          horizontal={true}
-          renderItem={({ item }) => (
-            <SocialMedia key={item.id - item.label} {...item} />
-          )}
+          renderItem={({ item }) => <SocialMedia {...item} />}
         />
       </View>
 

@@ -2,9 +2,12 @@ import React from "react"
 import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
+import { TrackingPixel } from "../../components/trackingPixel"
+
 export default function SextouPage() {
   return (
     <View style={styles.root}>
+      <TrackingPixel />
       <NoiseBackground />
       <Image
         resizeMode="contain"

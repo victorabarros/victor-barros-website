@@ -6,6 +6,7 @@ import { Header } from "../../components/header"
 import { HorizontalLine } from "../../components/horizontalLine"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { SocialMedia } from "../../components/socialMedia"
+import { TrackingPixel } from "../../components/trackingPixel"
 
 /*
 commands=[
@@ -39,6 +40,7 @@ const TERM_GIF_EXAMPLE = `http://terminalgifapi.com/api/v1/gif?commands=%5B%20%2
 export default function TermGIFPage() {
   return (
     <View style={styles.root}>
+      <TrackingPixel />
       <NoiseBackground />
       <Header />
 
