@@ -21,7 +21,7 @@ docker-command: kill-containers
 		-p ${PORT}:${PORT} --name ${APP_NAME} \
 		${BASE_DOCKER_IMAGE} sh -c "${COMMAND}"
 
-debug:
+run:
 	@clear
 	@echo "${YELLOW}Running ${APP_NAME} on port ${PORT}${COLOR_OFF}"
 	@make -s docker-command COMMAND="yarn && yarn dev"

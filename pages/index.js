@@ -29,7 +29,7 @@ export default function IndexPage() {
       <TrackingPixel />
       <NoiseBackground />
       <Header />
-      {/* <View style={styles.section}>
+      <View style={styles.section}>
         <Text style={styles.title}>Bio</Text>
         <Text
           style={[
@@ -40,12 +40,12 @@ export default function IndexPage() {
             },
           ]}
         >
-          Currently working at
-          <Link href={"https://superhuman.com/"}>
-            <Text style={{ color: theme.orange }}> Superhuman</Text>
+          Currently working with
+          <Link href={"https://www.hockeystack.com/"}>
+            <Text style={{ color: theme.orange }}> Hockeystack</Text>
           </Link>
         </Text>
-      </View> */}
+      </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Side Projects</Text>
