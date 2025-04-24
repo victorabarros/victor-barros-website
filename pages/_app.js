@@ -10,6 +10,18 @@ function MyApp({ Component, pageProps }) {
           vector.load("0bd6c765-d450-48c5-a3b5-bd6efa61d6ac");
         `}
       </Script>
+      <Script id="hockeystack-script" strategy="afterInteractive">
+        {`
+          var hsscript = document.createElement("script");
+          hsscript.id = "wphs";
+          hsscript.src = "https://cdn.jsdelivr.net/npm/hockeystack@latest/hockeystack.min.js";
+          hsscript.async = 1;
+          hsscript.dataset.apikey = "9fffdf09177892d4732701ee396786";
+          hsscript.dataset.cookieless = 1;
+          hsscript.dataset.autoIdentify = 1;
+          document.getElementsByTagName('head')[0].append(hsscript);
+        `}
+      </Script>
       <Component {...pageProps} />
     </>
   );
