@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { View } from "react-native";
 
 export const TrackingPixel = () => {
+  return <></>
   // State to store user behavior data
   const [behaviorData, setBehaviorData] = useState({
     mouseClicks: 0,
