@@ -66,6 +66,12 @@ export default function IndexPage() {
         />
       </View>
 
+      {/*
+      TODO: add section with videos:
+        - https://youtu.be/hocXsAqws4o
+        - https://youtu.be/V_2mB34WWvA
+      */}
+
       <View style={styles.section}>
         <Text style={styles.title}>Open Source Contributions</Text>
         <FlatList
