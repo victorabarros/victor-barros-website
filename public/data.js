@@ -17,6 +17,10 @@ export const ARTICLES = [
     label: "Installing Docker with one single command (Debian and Ubuntu)",
     url: "https://victoralmeidabarros.medium.com/install-docker-with-one-single-command-debian-and-ubuntu-ce021df0f976",
   },
+  {
+    label: "The journey to develop a twitter bot to publish uranium market stocks (only using free Saas)",
+    url: "https://victoralmeidabarros.medium.com/the-journey-to-develop-a-twitter-bot-to-publish-uranium-market-stocks-only-using-free-saas-152d197194",
+  },
 ]
 
 export const OPEN_SOURCE_CONTRIBUTIONS = [
@@ -24,9 +28,9 @@ export const OPEN_SOURCE_CONTRIBUTIONS = [
   { label: "w3b3d3v/w3d-podcast", url: "https://github.com/w3b3d3v/w3d-podcast/pull/1", },
   { label:"HubSpot/oauth-quickstart-nodejs", url:"https://github.com/HubSpot/oauth-quickstart-nodejs/pull/34", },
   { label: "PacktPublishing/Learn-Go-in-3-Hours", url: "https://github.com/PacktPublishing/Learn-Go-in-3-Hours/pull/3", },
+  // { label: "dgrijalva/jwt-go", url: "https://github.com/dgrijalva/jwt-go/issues/450", },
   // {label:"BlockchainCommons/Learning-Bitcoin-from-the-Command-Line", url:"https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/pull/624", },
   // { label: "aljazceru/awesome-nostr", url: "https://github.com/aljazceru/awesome-nostr/pull/431", },
-  // { label: "dgrijalva/jwt-go", url: "https://github.com/dgrijalva/jwt-go/issues/450", },
   // { label: "nsqio/nsq", url: "https://github.com/nsqio/nsq/pull/1243" },
   // { label: "nsqio/nsqio.github.io", url: "https://github.com/nsqio/nsqio.github.io/pull/60", },
 ]
