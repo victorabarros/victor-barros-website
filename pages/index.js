@@ -13,7 +13,8 @@ import {
   CERTIFICATIONS,
   OPEN_SOURCE_CONTRIBUTIONS,
   SIDE_PROJECTS,
-  SOCIAL_MEDIAS
+  SOCIAL_MEDIAS,
+  VIDEOS,
 } from "../public/data"
 import { theme } from "../public/styles"
 
@@ -66,11 +67,14 @@ export default function IndexPage() {
         />
       </View>
 
-      {/*
-      TODO: add section with videos:
-        - https://youtu.be/hocXsAqws4o
-        - https://youtu.be/V_2mB34WWvA
-      */}
+      <View style={styles.section}>
+        <Text style={styles.title}>Presentations</Text>
+        <FlatList
+          data={VIDEOS}
+          keyExtractor={(item) => item.label}
+          renderItem={({ item }) => <Item {...item} />}
+        />
+      </View>
 
       <View style={styles.section}>
         <Text style={styles.title}>Open Source Contributions</Text>

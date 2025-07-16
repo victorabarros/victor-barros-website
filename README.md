@@ -6,8 +6,8 @@ https://victor.barros.engineer/
 ## How to run locally w/ Docker 🐳
 
 ```sh
-# Debug mode (hot reload)
-make debug
+# Run in debug mode (hot reload)
+make run
 ```
 
 ## prod settings

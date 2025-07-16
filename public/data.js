@@ -75,3 +75,14 @@ export const SOCIAL_MEDIAS = [
     url: "https://victorbarros.hashnode.dev/",
   },
 ]
+
+export const VIDEOS = [
+  {
+    label: "Harvard CS50 2022 Final Project",
+    url: "https://youtu.be/hocXsAqws4o",
+  },
+  // {
+  //   label: "router CNC",
+  //   url: "https://youtu.be/V_2mB34WWvA",
+  // },
+]
