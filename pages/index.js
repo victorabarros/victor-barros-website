@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: "rgb(24, 26, 27)",
-    paddingHorizontal: 30,
+    paddingHorizontal: 80,
     paddingVertical: 50,
     width: "100%",
     minHeight: "100vh",
