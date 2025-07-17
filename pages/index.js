@@ -18,11 +18,16 @@ import {
 } from "../public/data"
 import { theme } from "../public/styles"
 
-const Item = ({ id, label, url }) => (
-  <Link href={url} style={styles.itemTextContainer}>
-    <Text style={styles.itemText}>{label}</Text>
-  </Link>
+const Item = ({ id, label, url, createdAt }) => (
+  <View style={styles.itemContentContainer}>
+    {createdAt && <Text style={styles.itemDate}>{new Date(createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</Text>}
+  <Link href={url}>    <Text style={styles.itemText}>{label}</Text>  </Link>
+  </View>
 )
+
+const dateDesc = (a, b) => {
+  return new Date(b.createdAt) - new Date(a.createdAt)
+}
 
 export default function IndexPage() {
   return (
@@ -61,7 +66,7 @@ export default function IndexPage() {
       <View style={styles.section}>
         <Text style={styles.title}>Articles</Text>
         <FlatList
-          data={ARTICLES}
+          data={ARTICLES.sort(dateDesc)}
           keyExtractor={(item) => item.label}
           renderItem={({ item }) => <Item {...item} />}
         />
@@ -70,7 +75,7 @@ export default function IndexPage() {
       <View style={styles.section}>
         <Text style={styles.title}>Presentations</Text>
         <FlatList
-          data={VIDEOS}
+          data={VIDEOS.sort(dateDesc)}
           keyExtractor={(item) => item.label}
           renderItem={({ item }) => <Item {...item} />}
         />
@@ -79,7 +84,7 @@ export default function IndexPage() {
       <View style={styles.section}>
         <Text style={styles.title}>Open Source Contributions</Text>
         <FlatList
-          data={OPEN_SOURCE_CONTRIBUTIONS}
+          data={OPEN_SOURCE_CONTRIBUTIONS.sort(dateDesc)}
           keyExtractor={(item) => item.label}
           renderItem={({ item }) => <Item {...item} />}
         />
@@ -88,7 +93,7 @@ export default function IndexPage() {
       <View style={styles.section}>
         <Text style={styles.title}>Certifications</Text>
         <FlatList
-          data={CERTIFICATIONS}
+          data={CERTIFICATIONS.sort(dateDesc)}
           keyExtractor={(item) => item.label}
           renderItem={({ item }) => <Item {...item} />}
         />
@@ -143,15 +148,23 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginVertical: 10,
   },
-  itemTextContainer: {
+  itemContentContainer: {
     marginVertical: 8,
     marginLeft: 15,
-    alignSelf: "flex-start",
+    flexDirection: "row",
   },
   itemText: {
     color: theme.orange,
     fontSize: 22,
     fontFamily: "Times New Roman",
+  },
+  itemDate: {
+    color: theme.gray,
+    fontSize: 16,
+    fontFamily: "Times New Roman",
+    width: 100,
+    alignSelf: "flex-end",
+    textAlign: "right",
   },
   socialMediasContainer: {
     flexDirection: "row",
