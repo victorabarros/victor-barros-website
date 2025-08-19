@@ -20,10 +20,9 @@ export default function TerrenoPage() {
         <View style={styles.mapContainer}>
           <iframe 
             src="https://www.google.com/maps/embed?pb=!4v1755618727849!6m8!1m7!1suhP4UfbSbNMpxMY1hq3wHA!2m2!1d-21.64562949232941!2d-41.7486657061572!3f211.3532939777832!4f11.832418006811082!5f0.4000000000000002" 
-            width="600" 
-            height="450" 
+            height="100%" 
             style={{border:0}} 
-            allowFullScreen="" 
+            allowFullScreen="yes" 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
           />
@@ -58,5 +57,8 @@ const styles = StyleSheet.create({
   mapContainer: {
     alignSelf: "center",
     marginVertical: 20,
+    width: "60%",
+    aspectRatio: 16/9,
+    maxWidth:1600,
   },
 })

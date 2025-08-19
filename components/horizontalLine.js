@@ -16,7 +16,7 @@ export const HorizontalLine = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.line}>{"===".repeat(100)}</Text>
+      <Text style={styles.line}>{"===".repeat(1000)}</Text>
     </View>
   )
 }
