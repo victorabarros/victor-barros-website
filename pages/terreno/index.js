@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   mapContainer: {
     alignSelf: "center",
     marginVertical: 20,
-    width: "60%",
+    width: "90%",
     aspectRatio: 16/9,
     maxWidth:1600,
   },
