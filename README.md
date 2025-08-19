@@ -12,7 +12,7 @@ make run
 
 ## prod settings
 
-- deployed on vercel
+- deployed on [vercel](https://vercel.com/victorabarros-proj/victor-barros-website)
 
 <!--
 TODO
