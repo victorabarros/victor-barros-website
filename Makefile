@@ -1,7 +1,7 @@
 APP_NAME:=$(shell pwd | xargs basename)
 APP_DIR=/${APP_NAME}/src
 BASE_DOCKER_IMAGE=node:22.11.0-alpine
-PORT=3009
+PORT=3010
 
 YELLOW=$(shell printf '\033[0;1;33m')
 COLOR_OFF=$(shell printf '\033[0;1;0m')
