@@ -61,11 +61,11 @@ export const CERTIFICATIONS = [
     label: "CS50, Harvard",
     createdAt: "2022-06-13"
   },
-  {
-    url: "https://1drv.ms/b/c/c5206815d3ff1e66/EWYe_9MVaCAggMVuawAAAAABNnPQZx2VbGVIDQN89aQUxA?e=poV8EB",
-    label: "English, Duolingo",
-    createdAt: "2022-08-14"
-  },
+  // {
+  //   url: "https://1drv.ms/b/c/c5206815d3ff1e66/EWYe_9MVaCAggMVuawAAAAABNnPQZx2VbGVIDQN89aQUxA?e=poV8EB",
+  //   label: "English, Duolingo",
+  //   createdAt: "2022-08-14"
+  // },
 ]
 
 export const PROFESSIONAL_ASSOCIATIONS = [
