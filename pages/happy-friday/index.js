@@ -14,15 +14,20 @@ export default function SextouPage() {
         <title>Happy Friday! 🍺</title>
         <meta name="description" content="It's Friday. I have no idea how we made it here, but here we are. 🍺" />
         
+        {/* Basic SEO */}
+        {/* <link rel="canonical" href="https://victor.barros.engineer/happy-friday" /> */}
+        
         {/* Open Graph meta tags for social media sharing */}
         <meta property="og:title" content="Happy Friday! 🍺" />
         <meta property="og:description" content="It's Friday. I have no idea how we made it here, but here we are. 🍺" />
-        <meta property="og:url" content="https://victorabarros.com/happy-friday" />
+        <meta property="og:url" content="https://victor.barros.engineer/happy-friday" />
         <meta property="og:image" content={RENAN_DRINKING_GIF_URL} />
+        {/* <meta property="og:image:secure_url" content={RENAN_DRINKING_GIF_URL} /> */}
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />
+        {/* <meta property="og:site_name" content="victor.barros.engineer" /> */}
         
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
