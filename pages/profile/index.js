@@ -27,7 +27,7 @@ export const getServerSideProps = async ({ query, res }) => {
   }
   
   const filename = PROFILE_PATH[name]
-  const filePath = path.join(process.cwd(), 'public', 'profile', filename)
+  const filePath = path.join(process.cwd(), 'pages', 'profile', filename)
   
   try {
     const fileBuffer = fs.readFileSync(filePath)
