@@ -6,7 +6,7 @@ import { Link } from "./link"
 export const Footer = () => (
   <View style={styles.root}>
     <Text style={styles.text}>
-      © Victor Barros - Built with
+      © Victor Almeida Barros - Built with
       <Link href="https://necolas.github.io/react-native-web">
         {" React Native for Web"}
       </Link>
