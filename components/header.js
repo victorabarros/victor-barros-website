@@ -7,7 +7,7 @@ import { Link } from "../components/link"
 export const Header = () => (
   <>
     <Link href={"/"}>
-      <Text style={styles.headLine}>Victor Barros</Text>
+      <Text style={styles.headLine}>Victor Almeida Barros</Text>
     </Link>
     <Text style={styles.title}>Software ⸱ Digital Product ⸱ Innovation</Text>
     <HorizontalLine />

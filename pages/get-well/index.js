@@ -8,18 +8,19 @@ import { TrackingPixel } from "../../components/trackingPixel"
 const YOU_GIF_URL = "https://media1.tenor.com/m/CF8YSyvBioIAAAAC/elaine-benes-get-well-soon.gif"
 
 export default function YouPage() {
+  const title = "Get Well Soon! 🤒"
   return (
     <>
       <Head>
         <title>Get Well Soon! 🤒</title>
-        <meta name="description" content="You got it 👆" />
+        <meta name="description" content={title} />
 
         {/* Basic SEO */}
         {/* <link rel="canonical" href="https://victor.barros.engineer/you" /> */}
 
         {/* Open Graph meta tags for social media sharing */}
         <meta property="og:title" content="You! 👆" />
-        <meta property="og:description" content="You got it 👆" />
+        <meta property="og:description" content={title} />
         <meta property="og:url" content="https://victor.barros.engineer/you" />
         <meta property="og:image" content={YOU_GIF_URL} />
         {/* <meta property="og:image:secure_url" content={YOU_GIF_URL} /> */}
@@ -32,7 +33,7 @@ export default function YouPage() {
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="You! 👆" />
-        <meta name="twitter:description" content="You got it 👆" />
+        <meta name="twitter:description" content={title} />
         <meta name="twitter:image" content={YOU_GIF_URL} />
       </Head>
       <View style={styles.root}>
