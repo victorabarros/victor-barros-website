@@ -24,7 +24,7 @@ docker-command: kill-containers
 
 run:
 	@clear
-	@echo "${YELLOW}Running ${APP_NAME} on port ${PORT}${COLOR_OFF}"
+	@echo "${YELLOW}Running ${APP_NAME} on http://localhost:${PORT}/${COLOR_OFF}"
 	@make -s docker-command COMMAND="yarn && yarn dev"
 
 # Git
