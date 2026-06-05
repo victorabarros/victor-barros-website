@@ -27,6 +27,8 @@ run:
 	@echo "${YELLOW}Running ${APP_NAME} on port ${PORT}${COLOR_OFF}"
 	@make -s docker-command COMMAND="yarn && yarn dev"
 
+# Git
+
 commit-llm-generated:
 	@msg_file="$$(mktemp)"; \
 	{ \
