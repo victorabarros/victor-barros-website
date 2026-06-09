@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const ROCK_GIF_URL = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzg5NGFjZXIwbmk5bDBoemR6YXZvcDJrYWhxYWFnMmhqYnF0NWZmeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/62lF7PPNddey4/giphy.gif"
 
@@ -21,9 +22,9 @@ export default function RockPage() {
         <meta property="og:title" content="Rock! 🪨" />
         <meta property="og:description" content="Rock 🪨" />
         <meta property="og:url" content="https://victor.barros.engineer/rock" />
-        <meta property="og:image" content={ROCK_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={ROCK_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(ROCK_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(ROCK_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

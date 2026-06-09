@@ -4,8 +4,9 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
-const YOU_GIF_URL = "https://giphy.com/gifs/theoffice-the-office-tv-dwights-speech-yBwcx562kZ2FWlYb2A"
+const YOU_GIF_URL = "https://media.giphy.com/media/yBwcx562kZ2FWlYb2A/giphy.gif"
 
 export default function YouPage() {
   return (
@@ -21,9 +22,9 @@ export default function YouPage() {
         <meta property="og:title" content="You! 👆" />
         <meta property="og:description" content="You got it 👆" />
         <meta property="og:url" content="https://victor.barros.engineer/you" />
-        <meta property="og:image" content={YOU_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={YOU_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(YOU_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(YOU_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

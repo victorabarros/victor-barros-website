@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const OH_YEAH_GIF_URL = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXppdm51enlxYXNvdnMyMHR3eTdjN3ZnejI5ZWt6MTVwMjJ5aDAxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gK5BJB51L556g/giphy.gif"
 
@@ -21,9 +22,9 @@ export default function OhYeahPage() {
         <meta property="og:title" content="Oh Yeah! 🎉" />
         <meta property="og:description" content="Oh Yeah! 🎉" />
         <meta property="og:url" content="https://victor.barros.engineer/oh-yeah" />
-        <meta property="og:image" content={OH_YEAH_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={OH_YEAH_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(OH_YEAH_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(OH_YEAH_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

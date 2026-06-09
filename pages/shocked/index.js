@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const SHOCKED_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDEzcXd4bTd4bG1heHZ1OWZneG0wdmcyY3BoZ3NqN3l5MzRqbXV6MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ie4fEHT4krdDO/giphy.gif"
 
@@ -21,9 +22,9 @@ export default function ShockedPage() {
         <meta property="og:title" content="Shocked! 😱" />
         <meta property="og:description" content="Shocked 😱" />
         <meta property="og:url" content="https://victor.barros.engineer/shocked" />
-        <meta property="og:image" content={SHOCKED_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={SHOCKED_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(SHOCKED_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(SHOCKED_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

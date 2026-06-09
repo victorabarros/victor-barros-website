@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const RENAN_DRINKING_GIF_URL = "https://media1.tenor.com/m/ONUKiRYfKw0AAAAd/renan-choque-de-cultura.gif"
 
@@ -21,9 +22,9 @@ export default function SextouPage() {
         <meta property="og:title" content="Happy Friday! 🍺" />
         <meta property="og:description" content="It's Friday. I have no idea how we made it here, but here we are. 🍺" />
         <meta property="og:url" content="https://victor.barros.engineer/happy-friday" />
-        <meta property="og:image" content={RENAN_DRINKING_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={RENAN_DRINKING_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(RENAN_DRINKING_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(RENAN_DRINKING_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

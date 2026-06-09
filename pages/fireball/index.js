@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const FIREBALL_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9raHl0NWRyOHFveGo2YXN6cG91bXZkdHJpcjZtYWE5YmJsOHZsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7Xov9qZ44Mq0qkCN9Q/giphy.gif"
 
@@ -21,9 +22,9 @@ export default function FireballPage() {
         <meta property="og:title" content="Fireball! 🔥" />
         <meta property="og:description" content="Fireball Dwight 🔥" />
         <meta property="og:url" content="https://victor.barros.engineer/fireball" />
-        <meta property="og:image" content={FIREBALL_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={FIREBALL_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(FIREBALL_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(FIREBALL_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

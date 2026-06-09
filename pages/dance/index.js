@@ -4,6 +4,7 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
+import { gifToJpg } from "../../components/gifPreview"
 
 const DANCE_GIF_URL = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3NwM3Z2ang3a2d1bjF4NTk2ejI2c2V5NzZoeXMxdTl4dmliNmYyZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QIAR3t18ZQLXa/giphy.gif"
 
@@ -21,9 +22,9 @@ export default function DancePage() {
         <meta property="og:title" content="Dance! 💃" />
         <meta property="og:description" content="Dancing 💃" />
         <meta property="og:url" content="https://victor.barros.engineer/dance" />
-        <meta property="og:image" content={DANCE_GIF_URL} />
-        {/* <meta property="og:image:secure_url" content={DANCE_GIF_URL} /> */}
-        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image" content={gifToJpg(DANCE_GIF_URL)} />
+        {/* <meta property="og:image:secure_url" content={gifToJpg(DANCE_GIF_URL)} /> */}
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />
