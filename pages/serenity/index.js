@@ -1,14 +1,23 @@
 import Head from "next/head"
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 import { gifToJpg } from "../../components/gifPreview"
 
-const SERENITY_GIF_URL = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ORdLCdjmBHtte/giphy.gif"
+const SERENITY_GIF_URLS = [
+  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ORdLCdjmBHtte/giphy.gif",
+  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OnZM1DxiB6xAA/giphy.gif",
+]
 
 export default function SerenityPage() {
+  const [gifUrl, setGifUrl] = useState(SERENITY_GIF_URLS[0])
+
+  useEffect(() => {
+    setGifUrl(SERENITY_GIF_URLS[Math.floor(Math.random() * SERENITY_GIF_URLS.length)])
+  }, [])
+
   return (
     <>
       <Head>
@@ -19,7 +28,7 @@ export default function SerenityPage() {
         <meta property="og:title" content="Serenity now" />
         <meta property="og:description" content="Serenity now" />
         <meta property="og:url" content="https://victor.barros.engineer/serenity" />
-        <meta property="og:image" content={gifToJpg(SERENITY_GIF_URL)} />
+        <meta property="og:image" content={gifToJpg(gifUrl)} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -29,14 +38,14 @@ export default function SerenityPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Serenity now" />
         <meta name="twitter:description" content="Serenity now" />
-        <meta name="twitter:image" content={SERENITY_GIF_URL} />
+        <meta name="twitter:image" content={gifUrl} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />
         <NoiseBackground />
       <Image
         resizeMode="contain"
-        source={{uri: SERENITY_GIF_URL}}
+        source={{uri: gifUrl}}
         style={{
           height: 500,
         }}
