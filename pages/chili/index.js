@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const CHILI_GIF_URL = "https://media.giphy.com/media/SZQBPO4NqHkh6wmdXk/giphy.gif"
 
@@ -22,9 +21,8 @@ export default function ChiliPage() {
         <meta property="og:title" content="Chili! 🌶️" />
         <meta property="og:description" content="Casual Friday Chili 🌶️" />
         <meta property="og:url" content="https://victor.barros.engineer/chili" />
-        <meta property="og:image" content={gifToJpg(CHILI_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(CHILI_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={CHILI_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

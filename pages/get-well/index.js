@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const YOU_GIF_URL = "https://media1.tenor.com/m/CF8YSyvBioIAAAAC/elaine-benes-get-well-soon.gif"
 
@@ -23,9 +22,8 @@ export default function YouPage() {
         <meta property="og:title" content="You! 👆" />
         <meta property="og:description" content={title} />
         <meta property="og:url" content="https://victor.barros.engineer/you" />
-        <meta property="og:image" content={gifToJpg(YOU_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(YOU_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={YOU_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

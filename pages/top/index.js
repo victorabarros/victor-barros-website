@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const TOP_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZkdTZhYjQzaTY3eWR4dXQ0YTRxcmlnZmFreHowcm8xZnh5eGpvdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RrywH6gONvKpUTkLcl/giphy.gif"
 
@@ -22,9 +21,8 @@ export default function TopPage() {
         <meta property="og:title" content="Top! 🔝" />
         <meta property="og:description" content="Top 🔝" />
         <meta property="og:url" content="https://victor.barros.engineer/top" />
-        <meta property="og:image" content={gifToJpg(TOP_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(TOP_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={TOP_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

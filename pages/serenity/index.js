@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const SERENITY_GIF_URLS = [
   "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ORdLCdjmBHtte/giphy.gif",
@@ -28,8 +27,8 @@ export default function SerenityPage() {
         <meta property="og:title" content="Serenity now" />
         <meta property="og:description" content="Serenity now" />
         <meta property="og:url" content="https://victor.barros.engineer/serenity" />
-        <meta property="og:image" content={gifToJpg(gifUrl)} />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={gifUrl} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

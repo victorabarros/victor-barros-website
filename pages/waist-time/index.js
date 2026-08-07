@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const WAIST_TIME_GIF_URL = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTVwcG92N3kxZ2VudWJibmE0ZnhxazducTJlZzQ1ZjViZndsNHpsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TvTR3wEyyqJpK/giphy.gif"
 
@@ -22,9 +21,8 @@ export default function WaistTimePage() {
         <meta property="og:title" content="Waist Time! ⏰" />
         <meta property="og:description" content="Waist Time ⏰" />
         <meta property="og:url" content="https://victor.barros.engineer/waist-time" />
-        <meta property="og:image" content={gifToJpg(WAIST_TIME_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(WAIST_TIME_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={WAIST_TIME_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

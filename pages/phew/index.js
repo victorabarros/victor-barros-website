@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const PHEW_GIF_URL = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGQzY3ppbXdzOHpsMWhpMjdwMHB6bWlzcnEyejBpMnFyaDdsOGp2ZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3o7TKuylrX8kT7XhVS/giphy.gif"
 
@@ -19,8 +18,8 @@ export default function PhewPage() {
         <meta property="og:title" content="Phew" />
         <meta property="og:description" content="Phew" />
         <meta property="og:url" content="https://victor.barros.engineer/phew" />
-        <meta property="og:image" content={gifToJpg(PHEW_GIF_URL)} />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={PHEW_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

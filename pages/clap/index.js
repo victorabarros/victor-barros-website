@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const CLAP_GIF_URL = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjN2bDMxMG83dTN1eWc4cDF6enU4eHVkdWZvNGc5azl3Z2dibTlpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S6qkS0ETvel6EZat45/giphy.gif"
 
@@ -22,9 +21,8 @@ export default function ClapPage() {
         <meta property="og:title" content="Clap! 👏" />
         <meta property="og:description" content="Clapping 👏" />
         <meta property="og:url" content="https://victor.barros.engineer/clap" />
-        <meta property="og:image" content={gifToJpg(CLAP_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(CLAP_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={CLAP_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />

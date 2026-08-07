@@ -4,7 +4,6 @@ import { Image, StyleSheet, View } from "react-native"
 import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
-import { gifToJpg } from "../../components/gifPreview"
 
 const WHAT_JUST_HAPPEN_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnFmcWl3MnE5bjdjaGFwMzZlYndobmJta3Y1NG1sYzNjYmVxNXFzMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1kThWInmtcDsQ6fGm/giphy.gif"
 
@@ -22,9 +21,8 @@ export default function WhatJustHappenPage() {
         <meta property="og:title" content="What Just Happen? 🤔" />
         <meta property="og:description" content="What Just Happen? 🤔" />
         <meta property="og:url" content="https://victor.barros.engineer/what-just-happen" />
-        <meta property="og:image" content={gifToJpg(WHAT_JUST_HAPPEN_GIF_URL)} />
-        {/* <meta property="og:image:secure_url" content={gifToJpg(WHAT_JUST_HAPPEN_GIF_URL)} /> */}
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content={WHAT_JUST_HAPPEN_GIF_URL} />
+        <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />
