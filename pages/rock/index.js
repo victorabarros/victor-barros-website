@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const ROCK_GIF_URL = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzg5NGFjZXIwbmk5bDBoemR6YXZvcDJrYWhxYWFnMmhqYnF0NWZmeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/62lF7PPNddey4/giphy.gif"
+const ROCK_GIF_URL = "/assets/rock.gif"
 
 export default function RockPage() {
   return (
@@ -21,7 +21,7 @@ export default function RockPage() {
         <meta property="og:title" content="Rock! 🪨" />
         <meta property="og:description" content="Rock 🪨" />
         <meta property="og:url" content="https://victor.barros.engineer/rock" />
-        <meta property="og:image" content={ROCK_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${ROCK_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function RockPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Rock! 🪨" />
         <meta name="twitter:description" content="Rock 🪨" />
-        <meta name="twitter:image" content={ROCK_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${ROCK_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

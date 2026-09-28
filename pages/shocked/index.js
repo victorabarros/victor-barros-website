@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const SHOCKED_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDEzcXd4bTd4bG1heHZ1OWZneG0wdmcyY3BoZ3NqN3l5MzRqbXV6MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ie4fEHT4krdDO/giphy.gif"
+const SHOCKED_GIF_URL = "/assets/shocked.gif"
 
 export default function ShockedPage() {
   return (
@@ -21,7 +21,7 @@ export default function ShockedPage() {
         <meta property="og:title" content="Shocked! 😱" />
         <meta property="og:description" content="Shocked 😱" />
         <meta property="og:url" content="https://victor.barros.engineer/shocked" />
-        <meta property="og:image" content={SHOCKED_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${SHOCKED_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function ShockedPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Shocked! 😱" />
         <meta name="twitter:description" content="Shocked 😱" />
-        <meta name="twitter:image" content={SHOCKED_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${SHOCKED_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

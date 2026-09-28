@@ -6,8 +6,8 @@ import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
 const SERENITY_GIF_URLS = [
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ORdLCdjmBHtte/giphy.gif",
-  "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9xMnc3N3BnMTk3aGs4ZWVkZGxieDFkaGp2enRwMmx5azZycHZyeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/OnZM1DxiB6xAA/giphy.gif",
+  "/assets/serenity.gif",
+  "/assets/serenity-2.gif",
 ]
 
 export default function SerenityPage() {
@@ -27,7 +27,7 @@ export default function SerenityPage() {
         <meta property="og:title" content="Serenity now" />
         <meta property="og:description" content="Serenity now" />
         <meta property="og:url" content="https://victor.barros.engineer/serenity" />
-        <meta property="og:image" content={gifUrl} />
+        <meta property="og:image" content={`https://victor.barros.engineer${gifUrl}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -37,7 +37,7 @@ export default function SerenityPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Serenity now" />
         <meta name="twitter:description" content="Serenity now" />
-        <meta name="twitter:image" content={gifUrl} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${gifUrl}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

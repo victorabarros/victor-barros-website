@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const DANCE_GIF_URL = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3NwM3Z2ang3a2d1bjF4NTk2ejI2c2V5NzZoeXMxdTl4dmliNmYyZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QIAR3t18ZQLXa/giphy.gif"
+const DANCE_GIF_URL = "/assets/dance.gif"
 
 export default function DancePage() {
   return (
@@ -21,7 +21,7 @@ export default function DancePage() {
         <meta property="og:title" content="Dance! 💃" />
         <meta property="og:description" content="Dancing 💃" />
         <meta property="og:url" content="https://victor.barros.engineer/dance" />
-        <meta property="og:image" content={DANCE_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${DANCE_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function DancePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Dance! 💃" />
         <meta name="twitter:description" content="Dancing 💃" />
-        <meta name="twitter:image" content={DANCE_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${DANCE_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

@@ -5,41 +5,37 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const CLAP_GIF_URL = "/assets/clap.gif"
+const TOBY_GIF_URL = "/assets/toby.gif"
 
-export default function ClapPage() {
+export default function TobyPage() {
   return (
     <>
       <Head>
-        <title>Clap! 👏</title>
-        <meta name="description" content="Clapping 👏" />
-
-        {/* Basic SEO */}
-        {/* <link rel="canonical" href="https://victor.barros.engineer/clap" /> */}
+        <title>Tobey! 👋</title>
+        <meta name="description" content="Tobey! 👋" />
 
         {/* Open Graph meta tags for social media sharing */}
-        <meta property="og:title" content="Clap! 👏" />
-        <meta property="og:description" content="Clapping 👏" />
-        <meta property="og:url" content="https://victor.barros.engineer/clap" />
-        <meta property="og:image" content={`https://victor.barros.engineer${CLAP_GIF_URL}`} />
+        <meta property="og:title" content="Tobey! 👋" />
+        <meta property="og:description" content="Tobey! 👋" />
+        <meta property="og:url" content="https://victor.barros.engineer/toby" />
+        <meta property="og:image" content={`https://victor.barros.engineer${TOBY_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
-        <meta property="og:image:width" content="600" />
+        <meta property="og:image:width" content="480" />
         <meta property="og:image:height" content="400" />
         <meta property="og:type" content="website" />
-        {/* <meta property="og:site_name" content="victor.barros.engineer" /> */}
 
         {/* Twitter Card meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Clap! 👏" />
-        <meta name="twitter:description" content="Clapping 👏" />
-        <meta name="twitter:image" content={`https://victor.barros.engineer${CLAP_GIF_URL}`} />
+        <meta name="twitter:title" content="Tobey! 👋" />
+        <meta name="twitter:description" content="Tobey! 👋" />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${TOBY_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />
         <NoiseBackground />
       <Image
         resizeMode="contain"
-        source={{uri: CLAP_GIF_URL}}
+        source={{uri: TOBY_GIF_URL}}
         style={{
           height: 500,
         }}

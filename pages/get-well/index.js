@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const YOU_GIF_URL = "https://media1.tenor.com/m/CF8YSyvBioIAAAAC/elaine-benes-get-well-soon.gif"
+const YOU_GIF_URL = "/assets/get-well.gif"
 
 export default function YouPage() {
   const title = "Get Well Soon! 🤒"
@@ -22,7 +22,7 @@ export default function YouPage() {
         <meta property="og:title" content="You! 👆" />
         <meta property="og:description" content={title} />
         <meta property="og:url" content="https://victor.barros.engineer/you" />
-        <meta property="og:image" content={YOU_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${YOU_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -33,7 +33,7 @@ export default function YouPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="You! 👆" />
         <meta name="twitter:description" content={title} />
-        <meta name="twitter:image" content={YOU_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${YOU_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

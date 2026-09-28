@@ -21,8 +21,8 @@ function discoverGifRoutes() {
       if (!fs.existsSync(indexPath)) return []
 
       const content = fs.readFileSync(indexPath, "utf8")
-      // Meme GIF pages embed a .gif URL; skips redirects, termgif, etc.
-      const match = content.match(/https?:\/\/[^"'`\s]+\.gif/)
+      // Meme GIF pages embed a .gif path; skips redirects, termgif, etc.
+      const match = content.match(/(?:https?:\/\/[^"'`\s]+|\/assets\/[^"'`\s]+)\.gif/)
       if (!match) return []
 
       return [{ path: entry.name, gif: match[0] }]

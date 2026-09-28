@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const WELCOME_GIF_URL = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajB6MHM4bjNieXlicW42NTVsdGM4MGc3b2tsaWtkczd2cHE5ZGxxNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VUOMN3AJbxSeY/giphy.gif"
+const WELCOME_GIF_URL = "/assets/welcome.gif"
 
 export default function WelcomePage() {
   return (
@@ -18,7 +18,7 @@ export default function WelcomePage() {
         <meta property="og:title" content="Welcome" />
         <meta property="og:description" content="Welcome to the party, pal" />
         <meta property="og:url" content="https://victor.barros.engineer/welcome" />
-        <meta property="og:image" content={WELCOME_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${WELCOME_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -28,7 +28,7 @@ export default function WelcomePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Welcome" />
         <meta name="twitter:description" content="Welcome to the party, pal" />
-        <meta name="twitter:image" content={WELCOME_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${WELCOME_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

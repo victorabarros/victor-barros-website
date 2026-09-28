@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const RENAN_DRINKING_GIF_URL = "https://media1.tenor.com/m/ONUKiRYfKw0AAAAd/renan-choque-de-cultura.gif"
+const RENAN_DRINKING_GIF_URL = "/assets/happy-friday.gif"
 
 export default function SextouPage() {
   return (
@@ -21,7 +21,7 @@ export default function SextouPage() {
         <meta property="og:title" content="Happy Friday! 🍺" />
         <meta property="og:description" content="It's Friday. I have no idea how we made it here, but here we are. 🍺" />
         <meta property="og:url" content="https://victor.barros.engineer/happy-friday" />
-        <meta property="og:image" content={RENAN_DRINKING_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${RENAN_DRINKING_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function SextouPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Happy Friday! 🍺" />
         <meta name="twitter:description" content="It's Friday. I have no idea how we made it here, but here we are. 🍺" />
-        <meta name="twitter:image" content={RENAN_DRINKING_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${RENAN_DRINKING_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

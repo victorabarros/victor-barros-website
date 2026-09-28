@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const OH_YEAH_GIF_URL = "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXppdm51enlxYXNvdnMyMHR3eTdjN3ZnejI5ZWt6MTVwMjJ5aDAxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gK5BJB51L556g/giphy.gif"
+const OH_YEAH_GIF_URL = "/assets/oh-yeah.gif"
 
 export default function OhYeahPage() {
   return (
@@ -21,7 +21,7 @@ export default function OhYeahPage() {
         <meta property="og:title" content="Oh Yeah! 🎉" />
         <meta property="og:description" content="Oh Yeah! 🎉" />
         <meta property="og:url" content="https://victor.barros.engineer/oh-yeah" />
-        <meta property="og:image" content={OH_YEAH_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${OH_YEAH_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function OhYeahPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Oh Yeah! 🎉" />
         <meta name="twitter:description" content="Oh Yeah! 🎉" />
-        <meta name="twitter:image" content={OH_YEAH_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${OH_YEAH_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

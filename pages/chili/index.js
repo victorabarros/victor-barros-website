@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const CHILI_GIF_URL = "https://media.giphy.com/media/SZQBPO4NqHkh6wmdXk/giphy.gif"
+const CHILI_GIF_URL = "/assets/chili.gif"
 
 export default function ChiliPage() {
   return (
@@ -21,7 +21,7 @@ export default function ChiliPage() {
         <meta property="og:title" content="Chili! 🌶️" />
         <meta property="og:description" content="Casual Friday Chili 🌶️" />
         <meta property="og:url" content="https://victor.barros.engineer/chili" />
-        <meta property="og:image" content={CHILI_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${CHILI_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function ChiliPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Chili! 🌶️" />
         <meta name="twitter:description" content="Casual Friday Chili 🌶️" />
-        <meta name="twitter:image" content={CHILI_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${CHILI_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />

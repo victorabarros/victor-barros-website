@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer"
 import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
-const PLUS_ONE_GIF_URL = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmJoeGkyZWcwanhsbGN1MG5icGo5dHBiZTJqZXdpNTd3bGU1c2p1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1ZkMDj88mQ1rO/giphy.gif"
+const PLUS_ONE_GIF_URL = "/assets/plus-one.gif"
 
 export default function PlusOnePage() {
   return (
@@ -21,7 +21,7 @@ export default function PlusOnePage() {
         <meta property="og:title" content="+1! 👍" />
         <meta property="og:description" content="Thumbs Up 👍" />
         <meta property="og:url" content="https://victor.barros.engineer/+1" />
-        <meta property="og:image" content={PLUS_ONE_GIF_URL} />
+        <meta property="og:image" content={`https://victor.barros.engineer${PLUS_ONE_GIF_URL}`} />
         <meta property="og:image:type" content="image/gif" />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="400" />
@@ -32,7 +32,7 @@ export default function PlusOnePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="+1! 👍" />
         <meta name="twitter:description" content="Thumbs Up 👍" />
-        <meta name="twitter:image" content={PLUS_ONE_GIF_URL} />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${PLUS_ONE_GIF_URL}`} />
       </Head>
       <View style={styles.root}>
         <TrackingPixel />
