@@ -6,7 +6,7 @@ import { NoiseBackground } from "../../components/noiseBackground"
 import { TrackingPixel } from "../../components/trackingPixel"
 
 const SERENITY_GIF_URLS = [
-  "/assets/serenity.gif",
+  // "/assets/serenity.gif",
   "/assets/serenity-2.gif",
 ]
 
