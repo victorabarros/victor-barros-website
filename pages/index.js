@@ -47,8 +47,8 @@ export default function IndexPage() {
           ]}
         >
           Currently working with
-          <Link href={"https://www.hockeystack.com/"}>
-            <Text style={{ color: theme.orange }}> Hockeystack</Text>
+          <Link href={"https://www.gosuppli.com/"}>
+            <Text style={{ color: theme.orange }}> Suppli</Text>
           </Link>
         </Text>
       </View>
