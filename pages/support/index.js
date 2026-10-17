@@ -55,7 +55,7 @@ export default function WalletPage() {
         </Pressable>
       </View>
 
-      <View style={styles.section}>
+      {/* <View style={styles.section}>
         <Text style={styles.title}>Lightning Wallet</Text>
 
         <Image
@@ -75,7 +75,7 @@ export default function WalletPage() {
             title="Copy address"
           />
         </View>
-      </View>
+      </View> */}
 
       <HorizontalLine />
 
