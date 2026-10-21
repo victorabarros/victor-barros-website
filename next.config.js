@@ -19,7 +19,7 @@ function gifRedirectsForSlack() {
     return [
       {
         source: `/${page.replace(/[+*?()[\]{}:]/g, "\\$&")}`,
-        has: [{ type: "header", key: "user-agent", value: ".*Slackbot.*" }],
+        has: [{ type: "header", key: "user-agent", value: ".*(Slackbot|Slack-ImgProxy).*" }],
         destination: match[0],
         permanent: false,
       },
