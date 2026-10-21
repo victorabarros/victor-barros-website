@@ -9,6 +9,8 @@ import { TrackingPixel } from "../../components/trackingPixel"
 import { theme } from "../../public/styles"
 
 const BASE_URL = "https://victor.barros.engineer"
+// Bump to bypass Slack's cached unfurls of the bare URLs.
+const CACHE_BUST_QUERY = "?v=2"
 
 function discoverGifRoutes() {
   const pagesDir = path.join(process.cwd(), "pages")
@@ -54,7 +56,7 @@ export default function GifIndexPage({ gifs }) {
   const [copiedPath, setCopiedPath] = useState(null)
 
   const copyUrl = async (routePath) => {
-    const url = `${BASE_URL}/${routePath}`
+    const url = `${BASE_URL}/${routePath}${CACHE_BUST_QUERY}`
     try {
       await navigator.clipboard.writeText(url)
       setCopiedPath(routePath)
