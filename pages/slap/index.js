@@ -1,0 +1,58 @@
+import Head from "next/head"
+import React from "react"
+import { Image, StyleSheet, View } from "react-native"
+import { Footer } from "../../components/footer"
+import { NoiseBackground } from "../../components/noiseBackground"
+import { TrackingPixel } from "../../components/trackingPixel"
+
+const SLAP_GIF_URL = "/assets/slap.gif"
+
+export default function SlapPage() {
+  return (
+    <>
+      <Head>
+        <title>Slap! 👋</title>
+        <meta name="description" content="Slap 👋" />
+
+        {/* Open Graph meta tags for social media sharing */}
+        <meta property="og:title" content="Slap! 👋" />
+        <meta property="og:description" content="Slap 👋" />
+        <meta property="og:url" content="https://victor.barros.engineer/slap" />
+        <meta property="og:image" content={`https://victor.barros.engineer${SLAP_GIF_URL}`} />
+        <meta property="og:image:type" content="image/gif" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="252" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Slap! 👋" />
+        <meta name="twitter:description" content="Slap 👋" />
+        <meta name="twitter:image" content={`https://victor.barros.engineer${SLAP_GIF_URL}`} />
+      </Head>
+      <View style={styles.root}>
+        <TrackingPixel />
+        <NoiseBackground />
+      <Image
+        resizeMode="contain"
+        source={{uri: SLAP_GIF_URL}}
+        style={{
+          height: 500,
+        }}
+      />
+
+        <Footer />
+      </View>
+    </>
+  )
+}
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: "rgb(24, 26, 27)",
+    paddingHorizontal: 10,
+    paddingVertical: 20,
+    minHeight: "100vh",
+  },
+})
