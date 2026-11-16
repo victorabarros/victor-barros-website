@@ -48,12 +48,12 @@ export const OPEN_SOURCE_CONTRIBUTIONS = [
     url: "https://github.com/PacktPublishing/Learn-Go-in-3-Hours/pull/3",
     createdAt: "2020-01-29"
   },
-  // { label: "dgrijalva/jwt-go", url: "https://github.com/dgrijalva/jwt-go/issues/450", },
   // {label:"BlockchainCommons/Learning-Bitcoin-from-the-Command-Line", url:"https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/pull/624", },
   // { label: "aljazceru/awesome-nostr", url: "https://github.com/aljazceru/awesome-nostr/pull/431", },
   // { label: "nsqio/nsq", url: "https://github.com/nsqio/nsq/pull/1243" },
   // { label: "nsqio/nsqio.github.io", url: "https://github.com/nsqio/nsqio.github.io/pull/60", },
   // TODO https://github.com/minimaxir/ballin/pull/2
+  // https://github.com/vrana/adminer/pull/1381
 ]
 
 export const CERTIFICATIONS = [
